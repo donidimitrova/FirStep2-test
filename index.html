@@ -11,6 +11,9 @@
     <link href="./css/bootstrap.min.css" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
     <title>Contact Form</title>
 </head>
@@ -40,12 +43,23 @@
             <div class="col-lg-6">
                 <div class="row " >
                    
-                <img  src="logo2.png" alt="olio" width="250" height="200" style="margin-left: 36%;" >
+                <img  src="logo2.png" alt="olio" width="250" height="200" style="margin-left: 30%;" >
                 
                 </div>
 
                 <div class="row align-items-center" >
-                    <p style="font-family: 'Kurale', serif; font-size: 25px; padding-left: 20%; padding-right: 20%; text-shadow: 0.7px 0px 1px #0000005e; text-align: center;">The first world AI based matching system that listen and understand your thoughts and match you with the professional that better suits your needs. With FirStep you will have a chat with our system and you will receive a contact of a psychologist that's right for you. </h4> 
+                    <p style="font-family:Georgia, 'Times New Roman', Times, serif; font-size: 1.4vw; padding-left: 15%; padding-right: 13%; text-shadow: 0.7px 0px 1px #0000005e; text-align: left;">The first world AI based matching system that listen and understand your thoughts and match you with the professional that better suits your needs. 
+                        <br>With FirStep you will have a chat with our system and you will receive a contact of a psychologist that's right for you. </h4> 
+                        
+                        <br>
+                            <a href="#demo" class="btn btn-info" data-toggle="collapse" style="margin-top: 10px; padding: 10px; font-size: 1.3vw;">Learn more</a>
+                            <div id="demo" class="collapse" style="font-family:Georgia, 'Times New Roman', Times, serif; font-size: 1.4 vw; padding-left: 15%; padding-right: 13%; text-shadow: 0.7px 0px 1px #0000005e; text-align: left;">
+                                We find what it’s best for you in few minutes with the world first AI matching system or get a quick chat with our FirStep consultants.<br>
+                                Here you will find more than 200 face-to-face or online professionals with at least 5 years of experience. <br>
+                                We accompany you from the discovery of your need to the first visits. Each professional is reviewed by the community. You can change your choice at any time.<br>
+
+                            </div>
+                          
 
                 </div>
     
@@ -55,28 +69,29 @@
           <div class="col-lg-6  hidden-md-down align-items-center" >
           
             <div class="form" style=" background-size: cover; padding-top:6%; 
-            margin-top: 4%; padding-left: 10%;  padding-bottom: 5%; border-radius: 15%; box-shadow: 5px 5px 10px 0px #0000007a;
+            margin-top: 4%; padding-left: 10%; padding-bottom: 15%; border-radius: 15%; box-shadow: 5px 5px 10px 0px #0000007a;
 ">
-                <h2 style="text-align: left; text-shadow: 0.7px 0px 1px #0000005e;">Contact us </h4> 
+                <h2 style="text-align: left; text-shadow: 0.7px 0px 1px #0000005e; font-family: 'Libre Bodoni', serif;">Request a consultation</h2> 
+                    <h4 style="text-align: left; text-shadow: 0.7px 0px 1px #0000005e;  font-family: 'Libre Bodoni', serif; margin-bottom: 10px; ">The first visit is free</h4> 
 
                     <form class="fcf-form-class" style="max-width: 300px;">
         
                         <div class="field">
-                            <label for="Name" class="label has-text-weight-normal" style="font-family: 'Kurale', serif;font-size: 20px;">Your name</label>
+                            <label for="Name" class="label has-text-weight-normal" style=" font-family: 'Libre Bodoni', serif;font-size: 20px;">Your name</label>
                             <div class="control">
                                 <input type="text" name="Name" id="Name" class="input is-full-width" maxlength="100"
                                     data-validate-field="Name">
                             </div>
                         </div>
                         <div class="field">
-                            <label for="Email" class="label has-text-weight-normal" style="font-family: 'Kurale', serif;font-size: 20px;">Your email address</label>
+                            <label for="Email" class="label has-text-weight-normal" style=" font-family: 'Libre Bodoni', serif;font-size: 20px;">Your email address</label>
                             <div class="control">
                                 <input type="email" name="Email" id="Email" class="input is-full-width" maxlength="100"
                                     data-validate-field="Email">
                             </div>
                         </div>
                         <div class="field">
-                            <label for="Message" class="label has-text-weight-normal" style="font-family: 'Kurale', serif;font-size: 20px;">Your message</label>
+                            <label for="Message" class="label has-text-weight-normal" style=" font-family: 'Libre Bodoni', serif;font-size: 20px;">Your message</label>
                             <div class="control">
                                 <textarea name="Message" id="Message" class="textarea" maxlength="3000" rows="5" 
                                 data-validate-field="Message"></textarea>
@@ -85,8 +100,28 @@
                         <div id="fcf-status" class="fcf-status"></div>
                         <div class="field">
                             <div class="buttons">
-                                <button id="fcf-button" type="submit" class="button is-link is-medium" style="font-family: 'Kurale', serif;font-size: 22px;">Send Message</button>
+                                <button id="fcf-button" data-toggle="modal" data-target="#exampleModal" type="submit" class="button is-link is-medium" style=" font-family: 'Libre Bodoni', serif;font-size: 1.4vw; margin-top: 10%;">Subscribe</button>
                             </div>
+                            <!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel" style="font-family: Georgia, 'Times New Roman', Times, serif;">Done</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            Thanks for testing the landing page!
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-success" data-dismiss="modal">Close</button>
+
+        </div>
+      </div>
+    </div>
+  </div>
                         </div>
                     </form>
                 </div>

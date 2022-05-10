@@ -11,8 +11,7 @@
     <link href="./css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  
 
     <title>Contact Form</title>
 </head>
@@ -99,7 +98,7 @@
                         <div id="fcf-status" class="fcf-status"></div>
                         <div class="field">
                             
-                                <button id="fcf-button" data-toggle="popover" title="Done" data-content="Thanks for testing the landing page"  type="submit" class="button is-link is-medium" style=" font-family: 'Libre Bodoni', serif;font-size: 1.4vw; margin-top: 10%;">Subscribe</button>
+                                <a href="thanks.html" role="button" id="fcf-button" class="button is-link is-medium" style=" font-family: 'Libre Bodoni', serif;font-size: 1.4vw; margin-top: 10%;">Subscribe</a>
                             </div>
 
                         </div>
@@ -114,27 +113,7 @@
         </div>
         
 
-        <script>
-            $(document).ready(function () {
-
-$('[data-toggle="popover"]').popover({
-    placement: 'bottom',
-    delay: {
-        "show": 400,
-        "hide": 100
-    }
-});
-
-$('[data-toggle="popover"]').click(function () {
-
-    setTimeout(function () {
-        $('.popover').fadeOut('slow');
-    }, 5000);
-
-});
-
-});
-            </script>
+        
 
 </body>
 
